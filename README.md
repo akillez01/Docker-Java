@@ -1,4 +1,4 @@
-# [Docker do 0 à Maestria: Contêineres Desmistificados + 3 BÔNUS](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/?couponCode=GTHB_FLASH_SALE2021)
+# [Docker do 0 à Maestria: Contêineres Desmistificados](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/?couponCode=GTHB_FLASH_SALE2021)
 ### [Domine containeres! Aprenda Docker do 0 absoluto na teoria e na prática! Integre o Docker à apps Java, .NET, Node JS e +](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/?couponCode=GTHB_FLASH_SALE2021)
 
 ![Forks](https://img.shields.io/github/forks/leandrocgsi/DockerFromZeroToMastery-SpingBoot-3.2.0-AndJava21)
