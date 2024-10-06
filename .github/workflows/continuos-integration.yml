@@ -1,4 +1,4 @@
-name: continuos-integration with GitHub, GitHub Actions and Docker Hub
+name: Continuous-Integration with GitHub, GitHub Actions and Docker Hub
 
 on:
   push:
@@ -20,9 +20,9 @@ jobs:
        uses: actions/setup-java@v4.4.0
        with:
          java-version: '21'
-         distribuição: 'adopt'
+         distribution: 'adopt'
          cache: maven
-     - name: Build Aplication Jar
+     - name: Build Application Jar
        working-directory: ./02-AfterDockerization/app
        run: mvn clean package
 
@@ -30,4 +30,11 @@ jobs:
        working-directory: ./02-AfterDockerization
        run: docker compose build
 
+     - name: Push to Docker Hub Container Registry
+       run:
+         docker tag docker-from-zero-to-mastery-java:latest ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-java:latest
+         docker tag docker-from-zero-to-mastery-java:latest ${{ secrets.DOCKER_PASSWORD }}/docker-from-zero-to-mastery-java:${{ github.run_id }}
+         
+         docker push ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-java
+         docker push ${{ secrets.DOCKER_PASSWORD }}/docker-from-zero-to-mastery-java:${{ github.run_id }}
        
