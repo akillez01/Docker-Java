@@ -1,4 +1,4 @@
-name: continuos-integration with GitHub, GitHub Actions and Docker Hub
+name: Continuous-Integration with GitHub, GitHub Actions and Docker Hub
 
 on:
   push:
@@ -20,9 +20,9 @@ jobs:
        uses: actions/setup-java@v4.4.0
        with:
          java-version: '21'
-         distribuição: 'adopt'
+         distribution: 'adopt'
          cache: maven
-     - name: Build Aplication Jar
+     - name: Build Application Jar
        working-directory: ./02-AfterDockerization/app
        run: mvn clean package
 
