@@ -1,26 +1,30 @@
+# Ignorar arquivos .class
 *.class
-*.github
-*.gitignore
-*./home/achilles/Documentos/Docker/gitdocker/DockerFromZeroToMastery/AfterDockerization/PostmanCollections
-*./home/achilles/Documentos/Docker/gitdocker/DockerFromZeroToMastery/AfterDockerization/docker-compose.yml
+
+# Ignorar a pasta .github e .gitignore (recomendado não ignorar)
+.github/
+.gitignore
+
+# Ignorar a pasta PostmanCollections e o arquivo docker-compose.yml na pasta AfterDockerization
+AfterDockerization/PostmanCollections/
+AfterDockerization/docker-compose.yml
 
 # SSH Keys
-
 *.pem
 *.ppk
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.ear
 
-#Gradle temporary files
+# Gradle temporary files
 target/
 
-#Eclipse files
+# Eclipse files
 **/.project
 **/.factorypath
 **/.classpath
@@ -29,11 +33,10 @@ target/
 blog/bin/
 **/.tern-project
 
-#IntelliJ files
+# IntelliJ files
 **/*.iml
 **/.idea
 **/.gradle
-
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
