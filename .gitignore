@@ -1,4 +1,8 @@
 *.class
+*.github
+*.gitignore
+*./home/achilles/Documentos/Docker/gitdocker/DockerFromZeroToMastery/AfterDockerization/PostmanCollections
+*./home/achilles/Documentos/Docker/gitdocker/DockerFromZeroToMastery/AfterDockerization/docker-compose.yml
 
 # SSH Keys
 
